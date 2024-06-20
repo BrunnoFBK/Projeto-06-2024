@@ -15,9 +15,9 @@ const perguntas = [
 {
     enunciado: "Onde é utilizada?",
     alternativas:[
-     "A engenharia, a arquitetura, a astronomia, as pesquisas nas ciências exatas",
+     "Na engenharia, a arquitetura, a astronomia, as pesquisas nas ciências exatas",
      "É pouco utilizada no dia a dia"
-    ]
+    ]   
     },
     {
         enunciado: "E na engenharia civil, como é usada?",
@@ -35,14 +35,19 @@ const perguntas = [
              "D) 851",
              "E) 849"
             ]
-            }
+            },
 ];
 let atual = 0;
 let perguntaAtual;
+
 function mostraPergunta() {
     perguntaAtual = perguntas[atual];
-    caixaPerguntas.textContent = perguntaAtual.enunciado;
+    caixaperguntas.textContent = perguntaAtual.enunciado;
 }
 
-mostraPergunta()
+function mostraPergunta(){
+    for(const alternativas of perguntaAtual.alternativas);
+}
+
+mostraPergunta();
 
